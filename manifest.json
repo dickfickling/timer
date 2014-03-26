@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+
+    "name": "Tracker",
+    "description": "Track your activities throughout the day",
+    "version": "0.0.1",
+
+    "permissions": [
+        "background",
+    "storage",
+    "alarms"
+        ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "background": {
+        "scripts" : ["background.js"],
+        "persistent": false
+    }
+}
